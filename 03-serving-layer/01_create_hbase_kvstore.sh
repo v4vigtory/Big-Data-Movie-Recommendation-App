@@ -1,0 +1,1 @@
+create 'vigneshv_all_users_top_movie_reco', 'reco'

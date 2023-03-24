@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+    <head>
+        <title>Result</title>
+        <link type="text/css" rel="stylesheet" href="table.css" />
+    </head>
+    <body>
+        <div style="margin-left:275px;margin-right:auto;display:inline-block;box-shadow: 10px 10px 5px #888888;border:1px solid #000000;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;background:white;font-size:20px; font-family:Trebuchet MS">
+            &nbsp;Top Ten Movie Recommendations for user {{ userid }}&nbsp;</div>
+        <p style="bottom-margin:10px">
+            <table class="CSS_Table_Example" style="width:60%;margin:auto;">
+                <tr><td>UserID</td><td>MovieID</td><td>Title</td><td>Genres</td></tr>
+                {{#movie_details}}
+                <tr><td>{{ userid }}</td><td>{{ movieid }}</td><td>{{ title }}</td><td>{{ genres }}</td></tr>{{/movie_details}}
+            </table>
+        </p>
+    </body>
+</html>
